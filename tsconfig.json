@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es6", // Versión de ECMAScript a compilar (puedes cambiarla a "es5" si es necesario)
+    "module": "commonjs", // Módulo usado por Node.js (CommonJS)
+    "moduleResolution": "node", // Resolución de módulos en Node.js
+    "strict": true, // Activa todas las comprobaciones estrictas de TypeScript
+    "esModuleInterop": true, // Permite usar importaciones por defecto de módulos CommonJS
+    "skipLibCheck": true, // Omitir la verificación de tipos en archivos de declaración
+    "forceConsistentCasingInFileNames": true // Fuerza que los nombres de archivo tengan el mismo uso de mayúsculas y minúsculas
+  }
+}
