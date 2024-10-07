@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import router from "./src/routes/routes";
+import cors from "cors";
 
 const port = 7200;
 const app = express();
@@ -17,6 +18,11 @@ mongoose
   });
 
 app.use(express.json());
+app.use(
+  cors({
+    origin: "*",
+  })
+);
 
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
